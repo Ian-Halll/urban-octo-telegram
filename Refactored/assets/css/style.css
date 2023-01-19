@@ -1,12 +1,14 @@
-* {
+* 
+
+
+/* the box sizing is used to include padding and margin within elements total sizes */
+{
+
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+
 }
 
-body {
-    background-color: #d9dcd6;
-}
+
 
 .header {
     padding: 20px;
@@ -20,8 +22,22 @@ body {
     font-size: 48px;
 }
 
+
+/* This selects the span within the main heading to be a slightly different hue to the rest of the main heading */
 .header h1 .seo {
     color: #d9dcd6;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+
+
+.lead-generation h3 {
+    margin-bottom: 10px;
+    text-align: center;
+
 }
 
 .header div {
@@ -35,7 +51,7 @@ body {
 .header div ul {
     list-style-type: none;
 }
-
+/* The display is set to inline-block to have the header elements appear side by side*/
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
@@ -49,7 +65,7 @@ a {
 p {
     font-size: 16px;
 }
-
+/*The hero is styled to have the meeting image as the main image, with the image centered and spanning the fullest possible width within the center */
 .hero {
     height: 800px;
     width: 100%;
@@ -58,6 +74,8 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+/* The floats are used to provide blank space on either side of the webpage*/
 
 .float-left {
     float: left;
@@ -69,13 +87,11 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
 
-.benefits {
+
+/*the following code sets the spacing and font  styling for the images and text within the lead-generation div, as well as the size of the inages within, the margin sets how far it is from the right end of the  webpage*/
+
+.lead-generation {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -86,108 +102,50 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.lead-generation div {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.lead-generation img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+
+}
+/*the following code sets the spacing and size of the images, text, and headings within the content div */
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
+/*The content div is styled to set the sizing of the smaller display images for the headings social media marketing, online  reputation management, and search engine optimization
+the font family provides several options for which fonts to use for the text content within. */
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+.content div {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-}
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
 }
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* the  max-height attribute is used to set the max height of images within the content div*/
+.content img {
     max-height: 200px;
+
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+.content h2 {
     margin-bottom: 20px;
     font-size: 36px;
-}
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/*sets the spacing as well as the text styling for the footer  at the bottom of the page, containing the horiseon copyright, the text align is set to center to have the copyright at the middle of the bottom of the page*/
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +153,4 @@ p {
     text-align: center;
 }
 
-.footer h2 {
-    font-size: 20px;
-}
+
